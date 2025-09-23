@@ -8,14 +8,57 @@
     display: none;
     /* OCULTAMOS EL ELEMENTO */
 }
+
 .login-form h2 {
     color: var(--BotonIngresar, #2F00FF);
     text-align: center;
+    /* Centrar el texto */
     font-family: Poppins;
+    /* Tipografia */
     font-size: 32px;
+    /* Tamaño del texto */
     font-style: normal;
+    /* Darle estilo a la letra*/
     font-weight: 700;
+    /* Darle color grosor al texto */
     line-height: normal;
+    /* La distancia que tiene el parrafo*/
     letter-spacing: 1.6px;
+    /* Espacio entre las letras*/
     text-transform: uppercase;
+    /*Transformar el texto ya sea Mayus, Minus*/
+}
+
+.login-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.perfil-imagen {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.perfil-imagen img {
+    width: 157px;
+    height: 151px;
+    border-radius: 500px;
+    object-fit: cover;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    /* separacion de 15px */
+}
+
+.input-group label {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.8px;
 }
