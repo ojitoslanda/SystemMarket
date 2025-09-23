@@ -3,6 +3,16 @@
 :root {
     --colorPrincipal: #2F00FF;
 }
+body{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* view height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .login-imagen {
     display: none;
@@ -61,4 +71,17 @@
     font-weight: 600;
     line-height: 100%;
     letter-spacing: 0.8px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input{
+    width: 100%; /* Ancho del 100%*/
+    padding: 12px; /* buttom. top. right. left */
+    border: 1px solid #ddd; 
+    border-radius: 50px; /* Border de 50px*/
+    font-size: 14px; /*  Tamaño de texto*/ 
+    outline: none;
+    transition: 0.3s; /* Agregamos transicion al input*/
 }
