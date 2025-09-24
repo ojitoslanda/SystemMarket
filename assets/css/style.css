@@ -111,7 +111,6 @@ body{
     .login-imagen{
         flex: 1;
         background-color: #FFF;
-        padding: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
