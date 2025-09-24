@@ -21,28 +21,20 @@ body{
 
 .login-form h2 {
     color: var(--BotonIngresar, #2F00FF);
-    text-align: center;
-    /* Centrar el texto */
-    font-family: Poppins;
-    /* Tipografia */
-    font-size: 32px;
-    /* Tamaño del texto */
-    font-style: normal;
-    /* Darle estilo a la letra*/
-    font-weight: 700;
-    /* Darle color grosor al texto */
-    line-height: normal;
-    /* La distancia que tiene el parrafo*/
-    letter-spacing: 1.6px;
-    /* Espacio entre las letras*/
-    text-transform: uppercase;
-    /*Transformar el texto ya sea Mayus, Minus*/
+    text-align: center; /* Centrar el texto */
+    font-family: Poppins; /* Tipografia */
+    font-size: 32px; /* Tamaño del texto */
+    font-style: normal; /* Darle estilo a la letra*/
+    font-weight: 700;  /* Darle color grosor al texto */
+    line-height: normal;  /* La distancia que tiene el parrafo*/
+    letter-spacing: 1.6px; /* Espacio entre las letras*/
+    text-transform: uppercase; /*Transformar el texto ya sea Mayus, Minus*/
 }
 
 .login-form {
     width: 100%;
     max-width: 100%;
-    padding: 20px;
+    padding: 5px;
 }
 
 .perfil-imagen {
@@ -59,8 +51,7 @@ body{
 }
 
 .input-group {
-    margin-bottom: 15px;
-    /* separacion de 15px */
+    margin-bottom: 15px; /* separacion de 15px */
 }
 
 .input-group label {
@@ -77,7 +68,7 @@ body{
 }
 
 .input-group input{
-    width: 100%; /* Ancho del 100%*/
+    width: 90%; /* Ancho del 100%*/
     padding: 12px; /* buttom. top. right. left */
     border: 1px solid #ddd; 
     border-radius: 50px; /* Border de 50px*/
