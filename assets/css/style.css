@@ -15,8 +15,7 @@ body{
 
 
 .login-imagen {
-    display: none;
-    /* OCULTAMOS EL ELEMENTO */
+    display: none; /* OCULTAMOS EL ELEMENTO */
 }
 
 .login-form h2 {
@@ -98,4 +97,11 @@ body{
     cursor: pointer; /*Icono de la mano*/
     font-size: 16px; /*tamaño del texto*/
     padding: 12px; /* top,right,left,buttom */
+}
+/* ==== DISPOSITIVO PARA WEB ==== */
+@media (min-width: 1024px){
+    .login-imagen{
+        display: block; /* APARECE LA IMAGEN */
+    }
+
 }
