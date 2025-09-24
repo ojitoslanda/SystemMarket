@@ -79,14 +79,11 @@ body{
 .pass-group{
     position: relative; /* Posición relativo */
 }
-.pass-group input{
-    width: 100%; /* tamaño del 100% */
-    padding-right: 40px; /* un espacio a la derecha del OJO*/
-}
+
 .eyes-password{
     position: absolute;
     right: 10px; /* Un espacio a la derecha  de 10px*/
-    top: 70%; /* Un espacio arriba del 70% */
+    top: 45%; /* Un espacio arriba del 70% */
     cursor: pointer; /* EL ICONO DE LA MANO */
     font-size: 18px; /* Tamaño del icono */
     color: #555; /*Color del icono */
