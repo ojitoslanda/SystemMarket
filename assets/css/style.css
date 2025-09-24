@@ -88,3 +88,8 @@ body{
     font-size: 18px; /* Tamaño del icono */
     color: #555; /*Color del icono */
 }
+
+.btn{
+    width: 100%;
+    
+}
