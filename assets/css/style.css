@@ -91,5 +91,11 @@ body{
 
 .btn{
     width: 100%;
-    
+    background-color: var(--colorPrincipal);
+    border: none; /* sin lineas de los borders*/
+    border-radius: 50px; 
+    color: #fff; /* Texto del color blanco */
+    cursor: pointer; /*Icono de la mano*/
+    font-size: 16px; /*tamaño del texto*/
+    padding: 12px; /* top,right,left,buttom */
 }
