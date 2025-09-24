@@ -98,6 +98,15 @@ body{
     font-size: 16px; /*tamaño del texto*/
     padding: 12px; /* top,right,left,buttom */
 }
+
+/* ==== DISPOSITIVO PARA WEB ==== */
+@media (min-width: 768px){
+    .login-imagen{
+        display: none; /* DESAPARECE LA IMAGEN */
+    }
+}
+
+
 /* ==== DISPOSITIVO PARA WEB ==== */
 @media (min-width: 1024px){
     .login-imagen{
