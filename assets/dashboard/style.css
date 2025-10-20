@@ -1,0 +1,206 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    height: 100vh;
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+    width: 260px;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-content {
+    overflow-y: auto;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Scroll personalizado */
+.sidebar-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
+}
+
+/* ====== PERFIL ====== */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile .logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #00b894;
+    object-fit: cover;
+}
+
+.profile h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ====== BOTÓN HAMBURGUESA ====== */
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    background: #00b894;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* ====== MENÚ ====== */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dropdown-btn {
+    width: 100%;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #636e72;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.dropdown-btn div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-btn i {
+    font-size: 16px;
+}
+
+.dropdown-btn:hover {
+    background-color: #00b894;
+}
+
+/* Submenús */
+.submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.submenu a {
+    background: #2d3436;
+    border: none;
+    color: #fff;
+    margin: 3px 0;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+}
+
+.submenu button i {
+    font-size: 14px;
+}
+
+.submenu button:hover {
+    background-color: #00b894;
+}
+
+/* Flecha animada */
+.dropdown-btn.active .arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* ====== BOTÓN CERRAR SESIÓN ====== */
+.logout {
+    padding: 20px;
+    border-top: 1px solid #333;
+}
+
+.logout button {
+    width: 100%;
+    background-color: #d63031;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logout button:hover {
+    background-color: #ff7675;
+}
+
+/* ====== CONTENIDO PRINCIPAL ====== */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        transform: translateX(-100%);
+        z-index: 999;
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .content {
+        padding: 20px;
+        margin-top: 30px;
+    }
+}
+
