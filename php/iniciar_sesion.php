@@ -13,6 +13,7 @@ while($row = $resultado->fetch_array(MYSQLI_ASSOC)){
             $_SESSION['user_sesion'] = $row;
             $encontrado = 1;
             echo "Usuario Existe, ¡Bienvenido!";
+            break;
         }else{ 
             $encontrado = 0;
             echo "Contraseña incorrecta"; 
