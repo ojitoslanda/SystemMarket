@@ -116,11 +116,12 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>Iniciar Sesión</h2>
-      <form action="#" method="#">
-        <label class="labelModal" for="usuario">Usuario</label>
-        <input class="inputGeneral" type="text" id="usuario" placeholder="Ingresa tu usuario" />
+      <form action="php/iniciar_sesion.php" method="POST">
+        <label class="labelModal" for="correo">Correo</label>
+        <input class="inputGeneral" type="email" name="ucorreo" id="correo" placeholder="Ingresa tu usuario" />
         <label class="labelModal" for="password">Contraseña</label>
         <input
+          name="upass"
           type="password"
           id="password"
           class="inputGeneral"
