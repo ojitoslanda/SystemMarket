@@ -1,4 +1,9 @@
-<?php     ?>
+<?php     
+session_start();
+if(isset($_SESSION['user_sesion'])){
+  $nombre_user = $_SESSION['user_sesion']['nombre'];
+}
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -38,7 +43,15 @@
         <div class="dropdown">
           <a href="#" class="header-link" onclick="toggleDropdown(event)">
             <span class="greeting">Hola,</span>
-            <span class="action">Inicia sesión</span>
+            <span class="action">
+              <?php
+                if(isset($nombre_user)){
+                  echo $nombre_user;  
+                }else{
+                  echo "Iniciar Sesión";
+                }
+              ?>
+            </span>
           </a>
           <div class="dropdown-menu">
             <a href="#" class="dropdown-item" id="btnLogin">Inicia sesión</a>
