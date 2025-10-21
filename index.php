@@ -207,7 +207,7 @@ if(isset($_SESSION['user_sesion'])){
               Swal.fire({
               icon: "error",
               title: "Oops!",
-              text: "¡Contraseña o Correo incorrecta
+              text: "¡Contraseña o Correo incorrecta!",
               });
           </script>
         <?php
