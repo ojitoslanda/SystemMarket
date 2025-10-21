@@ -57,6 +57,8 @@ if(isset($_SESSION['user_sesion'])){
             <a href="#" class="dropdown-item" id="btnLogin">Inicia sesión</a>
             <div class="dropdown-divider"></div>
             <a href="#" class="dropdown-item" id="btnRegistrarUser">Regístrate</a>
+            <div class="dropdown-divider"></div>
+            <a href="php/cerrar_sesion.php" class="dropdown-item">Cerrar Sesión</a>    
           </div>
         </div>
         <a href="#" class="header-link cart-icon">
@@ -197,6 +199,22 @@ if(isset($_SESSION['user_sesion'])){
         <?php
       }
     }
+
+    if(isset($_GET['error'])){
+      if($_GET['error'] == "user"){
+        ?>
+           <script>
+              Swal.fire({
+              icon: "error",
+              title: "Oops!",
+              text: "¡Contraseña o Correo incorrecta
+              });
+          </script>
+        <?php
+      }
+    }
+
+
   ?>
 
 
