@@ -12,7 +12,10 @@
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </head>
 
 <body>
   <!-- Header -->
@@ -153,6 +156,35 @@
   <script src="assets/js/toggledropdown_login.js"></script>
   <script src="assets/js/modal-login.js"></script>
   <script src="assets/js/modal-registro-usuario.js"></script>
+
+
+  <?php 
+    if(isset($_GET['msj'])){
+      if($_GET['msj'] == "ok"){
+        ?>
+          <script>
+              Swal.fire({
+              icon: "success",
+              title: "Registrado",
+              text: "¡Usted esta registrado en el sistema!",
+              });
+          </script>
+        <?php
+      }else{
+        ?>
+          <script>
+              Swal.fire({
+              icon: "error",
+              title: "Oops!",
+              text: "¡Usted no esta registrado en el sistema!",
+              });
+          </script>
+        <?php
+      }
+    }
+  ?>
+
+
 </body>
 
 </html>

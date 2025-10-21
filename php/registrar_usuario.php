@@ -9,9 +9,9 @@
                values('$nom_com','$correo','$pass');";
     $resultado = $conexion->query($sql_save);  
     if($resultado){
-        header('Location: ../index.php');
+        header('Location: ../index.php?msj=ok');
     }else{
-        echo "NO SE GUARDO LOS DATOS";
+        header('Location: ../index.php?msj=error');
     }
 
 ?>

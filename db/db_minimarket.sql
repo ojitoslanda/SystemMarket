@@ -29,3 +29,16 @@ foreign key(id_usuario) references usuarios(id_usuario),
 foreign key(id_categoria) references categorias_productos(id_categoria)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+
+
+# REGISTRAMOS DATOS A LA TABLE USUARIOS
+INSERT INTO usuarios(nombre,correo,pass)
+values('Kenji Alias','hola@senati.pe','1234');
+#CONSULTAMOS LA TABLE USUARIOS
+SELECT * FROM usuarios;
+
+
+
+
+
+
