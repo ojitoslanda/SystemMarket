@@ -126,7 +126,7 @@
           id="password"
           class="inputGeneral"
           placeholder="Ingresa tu contraseña" />
-        <button type="button" class="btnEntrarLogin">Entrar</button>
+        <button type="submit" class="btnEntrarLogin">Entrar</button>
       </form>
     </div>
   </div>

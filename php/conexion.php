@@ -9,6 +9,6 @@ if($conexion->connect_error){
     echo "CONEXION MALA";
     echo $conexion->connect_error; 
 }else{
-    echo "CONEXION EXITOSA";
+    //echo "CONEXION EXITOSA";
 }
 ?>
