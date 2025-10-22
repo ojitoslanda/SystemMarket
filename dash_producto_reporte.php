@@ -9,7 +9,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/dashboard/style.css">
-
+    <link rel="stylesheet" 
+          href="assets/dashboard/drp_table.css">
 </head>
 
 <body>
@@ -22,8 +23,30 @@
     <div class="content" id="content">
         <h1>Productos | Reportes</h1>
         <div id="content-area" class="card">
-            <p>Aqui vamos a escribir todo</p>
-            
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Categoria</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Stock</th>
+                    <th>Estado</th>
+                    <th>Codigo</th>
+                    <th>Usuario</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lacteos</td>
+                    <td>Leche Gloria</td>
+                    <td>1.50</td>
+                    <td>ruta_img</td>
+                    <td>10</td>
+                    <td>Disponible</td>
+                    <td>20129219</td>
+                    <td>Alberto</td>
+                </tr>
+            </table>
         </div>
     </div>
 
