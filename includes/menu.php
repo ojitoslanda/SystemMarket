@@ -38,6 +38,8 @@
 
         <!-- BOTÓN CERRAR SESIÓN -->
         <div class="logout">
-            <button type="button"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</button>
+            <form action="php/cerrar_sesion.php" method="">
+                <button type="submit"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</button>
+            </form>
         </div>
     </div>
