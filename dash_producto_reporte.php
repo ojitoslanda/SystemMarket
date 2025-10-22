@@ -20,10 +20,10 @@
     <?php  include 'includes/menu.php';  ?>
     <!-- CONTENIDO PRINCIPAL -->
     <div class="content" id="content">
-        <h1>Dashboard Principal</h1>
+        <h1>Productos | Reportes</h1>
         <div id="content-area" class="card">
             <p>Aqui vamos a escribir todo</p>
-
+            
         </div>
     </div>
 
