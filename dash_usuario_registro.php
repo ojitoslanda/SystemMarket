@@ -22,28 +22,31 @@
     <div class="content" id="content">
         <h1>Dashboard Principal</h1>
         <div id="content-area" class="card">
-            <form action="" method="">
+            <form action="php/dashboard/usuario_registro.php" method="POST">
                 <div>
                     <label for="nombre">Nombre :</label>
                     <input type="text" 
                            id="nombre" 
+                           name="nom"
                            placeholder="Escribe su nombre aqui">
                 </div>
                 <div>
                     <label for="correo">Correo Electronico :</label>
                     <input type="email" 
+                            name="correo"
                            id="correo" 
                            placeholder="Escribe su correo electronico">
                 </div>
                 <div>
                     <label for="pass">Contraseña :</label>
-                    <input type="password" 
+                    <input type="password"
+                           name="pass" 
                            id="pass" 
                            placeholder="Escribe su contraseña">
                 </div>
                 <div>
                      <label for="roles">Roles :</label>
-                     <select name="" id="roles">
+                     <select name="rol" id="roles">
                         <option>Seleccione un rol</option>
                         <option value="cliente">Cliente</option>
                         <option value="cajero">Cajero</option>
