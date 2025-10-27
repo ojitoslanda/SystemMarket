@@ -31,7 +31,7 @@
                 </button>
                 <div id="clientesSubmenu" class="submenu">
                     <a href="#" title="Ir a la página ......">Ver clientes</a>
-                    <a href="#" title="Ir a la página .....">Registrar cliente</a>
+                    <a href="dash_usuario_registro.php" title="Ir a la página .....">Registrar cliente</a>
                 </div>
             </div>
         </div>
