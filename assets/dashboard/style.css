@@ -204,3 +204,15 @@ body {
     }
 }
 
+/* ==== BOTON DE TABLA USUARIO (eliminar,editar) */
+.boton{
+    color:white;
+    font-weight: bold;
+    padding: 5px, 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.edit{ background-color: blue; }
+.edit:hover{ background-color: rgba(0, 0, 255, 0.671); }
+.delete{ background-color: red; }
+.delete:hover{ background-color: rgba(255, 0, 0, 0.664);}

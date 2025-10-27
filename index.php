@@ -1,7 +1,11 @@
 <?php     
 session_start();
 if(isset($_SESSION['user_sesion'])){
+  $roles_user = $_SESSION['user_sesion']['roles'];
   $nombre_user = $_SESSION['user_sesion']['nombre'];
+    if($roles_user !== "cliente"){
+      header('Location: dashboard.php');
+    }
 }
 ?>
 
@@ -54,11 +58,21 @@ if(isset($_SESSION['user_sesion'])){
             </span>
           </a>
           <div class="dropdown-menu">
-            <a href="#" class="dropdown-item" id="btnLogin">Inicia sesión</a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item" id="btnRegistrarUser">Regístrate</a>
-            <div class="dropdown-divider"></div>
-            <a href="php/cerrar_sesion.php" class="dropdown-item">Cerrar Sesión</a>    
+            <?php 
+              if(!isset($_SESSION['user_sesion'])){
+                ?>
+                  <a href="#" class="dropdown-item" id="btnLogin">Inicia sesión</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item" id="btnRegistrarUser">Regístrate</a>
+                 
+                <?php
+              }else{
+                ?>
+                  <div class="dropdown-divider"></div>
+                  <a href="php/cerrar_sesion.php" class="dropdown-item">Cerrar Sesión</a> 
+                <?php
+              }
+            ?>
           </div>
         </div>
         <a href="#" class="header-link cart-icon">
