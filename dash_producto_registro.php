@@ -40,13 +40,18 @@
                            placeholder="Escribe el precio del producto">
                 </div>
                 <div>
-                     <label for="roles">Roles :</label>
-                     <select name="rol" id="roles">
-                        <option>Seleccione un rol</option>
-                        <option value="cliente">Cliente</option>
-                        <option value="cajero">Cajero</option>
-                        <option value="admin">Administrador</option>
-                     </select>
+                    <label for="imagen_url">Imagen</label>
+                    <input type="file" accept="image/*">
+                </div>
+                 <div>
+                    <label for="stock">Stock</label>
+                    <input type="number" id="stock">
+                </div>
+                <div>
+                    <label for="status">Estado</label>
+                    <select name="" id="">
+                        
+                    </select>
                 </div>
                 <div> <button type="submit">Registrar</button> </div>
             </form>
