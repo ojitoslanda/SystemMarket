@@ -27,7 +27,7 @@ if(isset($_SESSION['user_sesion'])){
     <?php  include 'includes/menu.php';  ?>
     <!-- CONTENIDO PRINCIPAL -->
     <div class="content" id="content">
-        <h1>Productos | Reportes</h1>
+        <h1>Usuarios | Reportes</h1>
             <div id="content-area" class="card">
                 <table>
                 <tr>

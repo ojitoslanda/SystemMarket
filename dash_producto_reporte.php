@@ -42,19 +42,25 @@ if(isset($_SESSION['user_sesion'])){
                     <th>Usuario</th>
                 </tr>
                 <?php 
-                $sql="SELECT * FROM productos";
+                $sql="
+                    SELECT * FROM productos AS p
+                    INNER JOIN categorias_productos as ctp
+                    ON p.id_categoria = ctp.id_categoria   
+                    INNER JOIN usuarios AS u
+                    ON u.id_usuario = p.id_usuario            
+                ";
                 $resultado = mysqli_query($conexion,$sql);
                 while($dato = mysqli_fetch_array($resultado,MYSQLI_ASSOC)){  
                     echo "<tr>";
                       echo "<td>".$dato['id_producto']."</td>";      
-                      echo "<td>".$dato['id_categoria']."</td>";      
+                      echo "<td>".$dato['seccion']."</td>";      
                       echo "<td>".$dato['nombre_producto']."</td>";      
                       echo "<td>".$dato['precio']."</td>";      
                       echo "<td>".$dato['imagen_url']."</td>";      
                       echo "<td>".$dato['stock']."</td>";      
                       echo "<td>".$dato['estado']."</td>";      
                       echo "<td>".$dato['codigo_qr']."</td>";      
-                      echo "<td>".$dato['id_usuario']."</td>";      
+                      echo "<td>".$dato['nombre']."</td>";      
                     echo "</tr>";
                     //print_r($dato);
                 }

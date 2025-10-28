@@ -19,7 +19,7 @@
                 </button>
                 <div id="productosSubmenu" class="submenu">
                     <a href="dash_producto_reporte.php" title="Ir a la página producto reporte">Ver productos</a>
-                    <a href="#" title="Ir a la página ......">Agregar producto</a>
+                    <a href="dash_producto_registro.php" title="Ir a la página ......">Agregar producto</a>
                 </div>
 
                 <button class="dropdown-btn" onclick="toggleSubmenu('clientesSubmenu', this)">

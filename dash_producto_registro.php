@@ -20,29 +20,24 @@
     <?php  include 'includes/menu.php';  ?>
     <!-- CONTENIDO PRINCIPAL -->
     <div class="content" id="content">
-        <h1>Registro Usuario | Principal</h1>
+        <h1>Registro Producto | Principal</h1>
         <div id="content-area" class="card">
-            <form action="php/dashboard/usuario_registro.php" method="POST">
+            <form action="php/dashboard/producto_registro.php" method="POST">
                 <div>
-                    <label for="nombre">Nombre :</label>
-                    <input type="text" 
-                           id="nombre" 
-                           name="nom"
-                           placeholder="Escribe su nombre aqui">
+                    <label for="idcate">Categoria del Producto:</label>
+                    <select name="ctp" id="idcate">
+                        <option value="">Seleccione una categoria</option>
+                    </select>
                 </div>
                 <div>
-                    <label for="correo">Correo Electronico :</label>
-                    <input type="email" 
-                            name="correo"
-                           id="correo" 
-                           placeholder="Escribe su correo electronico">
+                    <label for="np">Nombre del producto :</label>
+                    <input type="text" name="nombreP" id="np" 
+                           placeholder="Escribe el nombre del producto">
                 </div>
                 <div>
-                    <label for="pass">Contraseña :</label>
-                    <input type="password"
-                           name="pass" 
-                           id="pass" 
-                           placeholder="Escribe su contraseña">
+                    <label for="pr">Precio :</label>
+                    <input type="number" name="precio"  id="pr" 
+                           placeholder="Escribe el precio del producto">
                 </div>
                 <div>
                      <label for="roles">Roles :</label>
