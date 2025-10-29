@@ -4,10 +4,14 @@ const btnEditar = document.querySelectorAll("#btnEditar");
 const btnEliminar = document.querySelectorAll("#btnEliminar");
 btnEditar.forEach(function (botones) {
     botones.addEventListener("click", function () {
-        let uname = document.querySelector("#nom")
-        let ucorreo = document.querySelector("#correo")
-        let uclave = document.querySelector("#clave")
-        let rol = document.querySelector("#roles")
+        const nom_u = botones.getAttribute("data-nombre")
+        const correo_u = botones.getAttribute("data-correo")
+        const pass_u = botones.getAttribute("data-pass")
+        const rol_u = botones.getAttribute("data-rol")
+        let uname = document.querySelector("#nom").value = nom_u
+        let ucorreo = document.querySelector("#correo").value = correo_u
+        let uclave = document.querySelector("#clave").value = pass_u
+        let rol = document.querySelector("#roles").value = rol_u
     })
 })
 
