@@ -4,12 +4,10 @@ const btnEditar = document.querySelectorAll("#btnEditar");
 const btnEliminar = document.querySelectorAll("#btnEliminar");
 btnEditar.forEach(function (botones) {
     botones.addEventListener("click", function () {
-        
-
-        
-
-
-
+        let uname = document.querySelector("#nom")
+        let ucorreo = document.querySelector("#correo")
+        let uclave = document.querySelector("#clave")
+        let rol = document.querySelector("#roles")
     })
 })
 
