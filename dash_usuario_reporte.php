@@ -28,6 +28,24 @@ if(isset($_SESSION['user_sesion'])){
     <!-- CONTENIDO PRINCIPAL -->
     <div class="content" id="content">
         <h1>Usuarios | Reportes</h1>
+         <p class="contenedor-editar">
+            <form action="#" method="#">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Escribe tu nombre">
+                <label for="correo">Correo</label>
+                <input type="text" placeholder="Escribe tu correo">
+                <label for="clave">Contraseña</label>
+                <input type="text" placeholder="Escribe tu contrseña">
+                <label for="roles">Rol</label>
+                <select name="rol" id="roles">
+                        <option>Seleccione un rol</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="cajero">Cajero</option>
+                        <option value="admin">Administrador</option>
+                </select>
+                <input type="submit" value="Actualizar datos">
+            </form>
+         </p>
             <div id="content-area" class="card">
                 <table>
                 <tr>
@@ -50,7 +68,7 @@ if(isset($_SESSION['user_sesion'])){
                       echo "<td>".$dato['roles']."</td>";
                       echo "<td>
                                 <button type='button' id='btnEditar' class='boton edit'>Editar</button>
-                                <button type='button' id='btnEliminar' class='boton delete'>Eliminar</button>
+                                <button type='button' data-id-user='".$dato['id_usuario']."' id='btnEliminar' class='boton delete'>Eliminar</button>
                             </td>";      
                     echo "</tr>";
                     //print_r($dato);
