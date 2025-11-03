@@ -28,8 +28,8 @@ if(isset($_SESSION['user_sesion'])){
     <!-- CONTENIDO PRINCIPAL -->
     <div class="content" id="content">
         <h1>Usuarios | Reportes</h1>
-         <p class="contenedor-editar">
-            <form action="#" method="#">
+         <p class="contenedor-editar" >
+            <form action="#" method="#" id="formEditar" style="display:none">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nom" name="nom" placeholder="Escribe tu nombre">
                 <label for="correo">Correo</label>

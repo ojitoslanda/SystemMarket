@@ -2,8 +2,11 @@
 //Document Object Model (Modelo de Objeto de Documento)
 const btnEditar = document.querySelectorAll("#btnEditar");
 const btnEliminar = document.querySelectorAll("#btnEliminar");
+
 btnEditar.forEach(function (botones) {
     botones.addEventListener("click", function () {
+        const formEditar = document.getElementById("formEditar");
+        formEditar.style.display = "block";
         const nom_u = botones.getAttribute("data-nombre")
         const correo_u = botones.getAttribute("data-correo")
         const pass_u = botones.getAttribute("data-pass")
