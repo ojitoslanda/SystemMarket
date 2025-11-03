@@ -2,19 +2,26 @@
 //Document Object Model (Modelo de Objeto de Documento)
 const btnEditar = document.querySelectorAll("#btnEditar");
 const btnEliminar = document.querySelectorAll("#btnEliminar");
+const formEditar = document.getElementById("formEditar");
+let idusr = document.querySelector("#idusr")
+let uname = document.querySelector("#nom")
+let ucorreo = document.querySelector("#correo")
+let uclave = document.querySelector("#clave")
+let rol = document.querySelector("#roles")
 
 btnEditar.forEach(function (botones) {
     botones.addEventListener("click", function () {
-        const formEditar = document.getElementById("formEditar");
         formEditar.style.display = "block";
         const nom_u = botones.getAttribute("data-nombre")
         const correo_u = botones.getAttribute("data-correo")
         const pass_u = botones.getAttribute("data-pass")
         const rol_u = botones.getAttribute("data-rol")
-        let uname = document.querySelector("#nom").value = nom_u
-        let ucorreo = document.querySelector("#correo").value = correo_u
-        let uclave = document.querySelector("#clave").value = pass_u
-        let rol = document.querySelector("#roles").value = rol_u
+        const id_u = botones.getAttribute("data-iduser")
+        uname.value = nom_u
+        ucorreo.value = correo_u
+        uclave.value = pass_u
+        rol.value = rol_u
+        idusr.value = id_u
     })
 })
 
@@ -40,5 +47,14 @@ btnEliminar.forEach(function (botones) {
                 }
             });
     })
+})
+
+cancelar_formeditar = document.getElementById("cancelar_formeditar");
+cancelar_formeditar.addEventListener("click", function(){
+    formEditar.style.display = "none";
+    uname.value = ""
+    ucorreo.value = ""
+    uclave.value = ""
+    rol.value = ""
 })
 

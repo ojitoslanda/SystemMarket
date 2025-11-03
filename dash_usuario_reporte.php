@@ -29,8 +29,9 @@ if(isset($_SESSION['user_sesion'])){
     <div class="content" id="content">
         <h1>Usuarios | Reportes</h1>
          <p class="contenedor-editar" >
-            <form action="#" method="#" id="formEditar" style="display:none">
+            <form action="php/dashboard/usuario_actualizar.php" method="post" id="formEditar" style="display:none">
                 <label for="nombre">Nombre</label>
+                <input type="hidden" id="idusr" name="iduser">
                 <input type="text" id="nom" name="nom" placeholder="Escribe tu nombre">
                 <label for="correo">Correo</label>
                 <input type="text" id="correo" name="email" placeholder="Escribe tu correo">
@@ -43,7 +44,8 @@ if(isset($_SESSION['user_sesion'])){
                         <option value="cajero">Cajero</option>
                         <option value="admin">Administrador</option>
                 </select>
-                <input type="submit" value="Actualizar datos">
+                <input type="submit" value="Actualizar datos" style="background: blue; color:white">
+                <input type="button" value="Cancelar Editar" id="cancelar_formeditar"style="background: red; color:white">
             </form>
          </p>
             <div id="content-area" class="card">
