@@ -183,7 +183,6 @@ if(isset($_SESSION['user_sesion'])){
     </div>
   </div>
 
-
   <script src="assets/js/toggledropdown_login.js"></script>
   <script src="assets/js/modal-login.js"></script>
   <script src="assets/js/modal-registro-usuario.js"></script>

@@ -1,3 +1,6 @@
+<?php
+require 'php/conexion.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -25,9 +28,19 @@
             <form action="php/dashboard/producto_registro.php" method="POST">
                 <div>
                     <label for="idcate">Categoria del Producto:</label>
-                    <select name="ctp" id="idcate">
-                        <option value="">Seleccione una categoria</option>
-                    </select>
+                    <?php 
+                        $sql = "SELECT * FROM categorias_productos;";
+                        $resultado = mysqli_query($conexion,$sql);
+                        echo "<select name='ctp' id='idcate'>";
+                        while($dato = mysqli_fetch_array($resultado,MYSQLI_ASSOC)){ 
+                          ?>
+                             <option value="<?php echo $dato['id_categoria'] ?>"> 
+                                <?php echo $dato['seccion'] ?>
+                             </option>
+                          <?php
+                        }
+                        echo "</select>";
+                    ?>
                 </div>
                 <div>
                     <label for="np">Nombre del producto :</label>
@@ -41,16 +54,22 @@
                 </div>
                 <div>
                     <label for="imagen_url">Imagen</label>
-                    <input type="file" accept="image/*">
+                    <input id="imgFile" name="img_url" type="file" accept="image/*">
+                    <img id="visual" 
+                        src="" 
+                        alt="Imagen representativa" 
+                        style="width:100px;">
                 </div>
                  <div>
                     <label for="stock">Stock</label>
-                    <input type="number" id="stock">
+                    <input type="number" name="stock" value="0" id="stock" min="0" max="99" maxlength="3">
                 </div>
                 <div>
                     <label for="status">Estado</label>
-                    <select name="" id="">
-                        
+                    <select name="estado" id="status"> 
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
+                        <option value="No disponible">No disponible</option>
                     </select>
                 </div>
                 <div> <button type="submit">Registrar</button> </div>
@@ -59,6 +78,7 @@
     </div>
 
     <script src="assets/dashboard/main.js"></script>
+    <script src="assets/dashboard/imagen.js"></script>
 </body>
 
 </html>
