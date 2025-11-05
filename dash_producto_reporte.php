@@ -56,7 +56,11 @@ if(isset($_SESSION['user_sesion'])){
                       echo "<td>".$dato['seccion']."</td>";      
                       echo "<td>".$dato['nombre_producto']."</td>";      
                       echo "<td>".$dato['precio']."</td>";      
-                      echo "<td>".$dato['imagen_url']."</td>";      
+                      echo "<td>";
+                      ?>
+                       <img width="100" src='recursos/<?php echo $dato['imagen_url']; ?>'>
+                      <?php
+                      echo "</td>";      
                       echo "<td>".$dato['stock']."</td>";      
                       echo "<td>".$dato['estado']."</td>";      
                       echo "<td>".$dato['codigo_qr']."</td>";      

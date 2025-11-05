@@ -25,7 +25,7 @@ require 'php/conexion.php';
     <div class="content" id="content">
         <h1>Registro Producto | Principal</h1>
         <div id="content-area" class="card">
-            <form action="php/dashboard/producto_registro.php" method="POST">
+            <form action="php/dashboard/producto_registro.php" method="POST" enctype="multipart/form-data">
                 <div>
                     <label for="idcate">Categoria del Producto:</label>
                     <?php 
@@ -58,7 +58,7 @@ require 'php/conexion.php';
                     <img id="visual" 
                         src="" 
                         alt="Imagen representativa" 
-                        style="width:100px;">
+                        style="width:100px; display:none">
                 </div>
                  <div>
                     <label for="stock">Stock</label>
